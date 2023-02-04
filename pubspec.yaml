@@ -33,10 +33,10 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
-  get: ^4.3.8
+  cupertino_icons: ^1.0.5
+  get: ^4.6.5
   # Http 사용
-  http: ^0.13.3
+  http: ^0.13.5
   http_client: ^1.5.1
 
 dev_dependencies:
