@@ -1,16 +1,21 @@
 # vanilla_getx
-기본 getx_pattern 베이스 샘플
-# flutter 버전 업그레이드시
-android\build.gradle 파일
-ext.kotlin_version 버전 변경
-classpath 'com.android.tools.build:gradle:7.0.1' 버전 변경
 
-android\app\build.gradle 파일
-compileSdkVersion, targetSdkVersion 변경
+이 프로젝트는 getx_pattern을 기반으로 한 샘플 앱입니다.
 
-android\gradle\wrapper\gradle-wrapper.properties 파일
-distributionUrl=https\://services.gradle.org/distributions/gradle-7.0.2-all.zip 버전 변경
+## Flutter 버전 업그레이드시 변경해야 할 사항
+Flutter를 업그레이드할 때, 아래 파일들에서 몇 가지 버전 값을 변경해야합니다.
 
-android\app\src\main\AndroidManifest.xml 파일
-active 내부에 android:exported="true" 추가
- Manifest파일에 android:exported를 추가해 주고 true 혹은 false 값을 추가해주면 됩니다. 다른 애플리케이션 앱과 상호작용할 계획이 없다면 false를 저정합니다.  기존에는 이 값이 디폴트값으로 자동 적용되었으나 Android12부터는 명시적으로 지정
+### android\build.gradle 파일
+- `ext.kotlin_version` 변수의 값 변경
+- `classpath 'com.android.tools.build:gradle:7.0.1'` 버전 변경
+
+### android\app\build.gradle 파일
+- `compileSdkVersion`, `targetSdkVersion` 값 변경
+
+### android\gradle\wrapper\gradle-wrapper.properties 파일
+- `distributionUrl=https\://services.gradle.org/distributions/gradle-7.0.2-all.zip` 버전 변경
+
+### android\app\src\main\AndroidManifest.xml 파일
+- `active` 내부에 `android:exported="true"` 추가
+
+만약 현재 앱이 다른 앱과 상호작용하게끔 설계되어 있지 않다면, `android:exported` 값을 `false`로 설정해야 합니다. 이 값은 Android 12부터 명시적으로 지정해주어야 합니다.

@@ -36,8 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.5
   get: ^4.6.5
   # Http 사용
-  http: ^0.13.5
-  http_client: ^1.5.1
+  http: ^0.13.6
+  http_client: ^1.5.2
 
 dev_dependencies:
   flutter_test:
